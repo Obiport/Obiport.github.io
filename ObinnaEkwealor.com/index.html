@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">OBINNA EKWEALOR</div>`
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">OBINNA EKWEALOR</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="prof2.jpg" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">OBINNA EKWEALOR</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('obinna ekwealor CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="1161953_instagram_icon.png"
+            alt=""
+            class="icon"
+            onclick="location.href='https://www.instagram.com/obinnaa.ek/'"
+          />
+          <a href="mailto:your-email@example.com">
+            <img src="7115264_new_logo_gmail_icon.png" alt="" class="icon">
+        </a>
+        </div>
+      </div>
+    </section>
+    <img
+    src="arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="guyy-photoaidcom-cropped.jpg"
+            alt=""
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt=""
+                class="icon"
+              />
+              <img src="download.png" alt="" class="icon">
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Management Information System </p>
+              <p style="font-weight: bold; color: black;">CURRENT CGPA: 4.10</p>
+
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: center;">
+              I am a dedicated student currently pursuing a degree in Management Information Systems. Embarking on my first-ever internship/work experience, I am eager to combine my academic knowledge with practical experiences to contribute effectively to the dynamic world of information systems.
+              My journey into Management Information Systems has been fueled by a deep-seated curiosity about the intersection of technology and business.
+              While I am still discovering the full extent of my capabilities, I am confident in my ability to adapt, learn quickly, and collaborate effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <div style="margin-bottom: 50px;"></div>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="104494_html5_html_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="9055543_bxs_file_css_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="7564187_figma_logo_brand_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FIGMA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="282802_javascript_js_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="9040383_filetype_java_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="7077517_csharp_file_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C-SHARP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./icons8-mongodb-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>BASIC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="4691303_mysql_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MY SQL</h3>
+                  <p>BASIC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="8546986_node_icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NODE JS</h3>
+                  <p>BASIC</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./MEDICAL REMINDER .png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MEDICATION REMINDER APPLICATION </h2>
+            <p >
+          I crafted a mobile app dedicated to empowering users in managing their medication schedules. By employing HTML, CSS, JS, and MongoDB, the app ensures seamless interaction and data storage. Leveraging Windows API Push notifications, users receive timely reminders, eliminating the risk of missing any medication doses.</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./SIGN.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ACCESS MANAGEMENT PORTAL</h2>
+            <P>
+              I developed an intuitive sign-in/sign-up system with real-life validation, leveraging HTML, CSS, and JS. The user profiles are securely stored in a MongoDB database, ensuring data integrity. Before successful login, the system verifies user existence in the database, seamlessly integrating these technologies for a streamlined authentication experience.</P>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./QUIZAPP.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">QUIZ APPLICATION</h2>
+           <P>
+            I created a Nigerian quiz app for Independence Day, utilizing MySQL and C# Windows Forms. The questions, options, and answers are stored in a MySQL database, dynamically loaded onto the interface for easy updates.</P>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+                <img src="PORTFOLIO PICTURE.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PORTFOLIO WEBSITE</h2>
+            <p>
+              I engineered a captivating portfolio web application utilizing HTML, CSS, and JavaScript to showcase my professional endeavors and skills. This interactive platform offers visitors a comprehensive overview of my projects, expertise, and contact information in a visually appealing and user-friendly interface. 
+            </p>
+        </div>
+        
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="NEWSPIC.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title"> NEWS APPLICATION</h2>
+            <p>
+              I crafted a dynamic financial news application using HTML, CSS, and JavaScript, seamlessly integrating a news API to display the latest financial and current news updates. The user-friendly interface provides easy navigation and access to an excess of news articles from diverse sources.
+            </p>
+        </div>
+        
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="WeatherPic.png" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">WEATHER APPLICATION</h2>
+            <p>
+              I developed an interactive weather application leveraging HTML, CSS, and JavaScript to provide users with up-to-date weather information. By integrating a weather API, the application fetches and displays current weather conditions, temperature, and other relevant details in a visually appealing manner. Users can easily navigate through the interface, accessing comprehensive weather forecasts from various sources with ease.
+            </p>
+        </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">obi.ekwealor@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="whatsapp.png"
+            alt="Whatsapp icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/07045977779 ">Whatsapp</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 OBINNA EKWEALOR. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
