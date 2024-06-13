@@ -1,6 +1,7 @@
 package com.airbnb.clone.airbnbclone;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "listings")
@@ -9,26 +10,43 @@ public class Listing {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
+    @NotBlank(message = "Host first name is mandatory")
     @Column(name = "host_first_name")
     private String host_first_name;
+
+    @NotBlank(message = "Host last name is mandatory")
     @Column(name = "host_last_name")
     private String host_last_name;
-    @Column(name = "host_email")
+
+    @NotBlank(message = "Host email is mandatory")
+    @Email(message = "Host email should be valid")
+    @Column(name = "host_email", unique = true)
     private String host_email;
+
+    @NotBlank(message = "Title is mandatory")
+    @Size(max = 255, message = "Title should not exceed 255 characters")
     @Column(name = "title")
     private String title;
+
+    @NotBlank(message = "Description is mandatory")
+    @Size(max = 1000, message = "Description should not exceed 1000 characters")
     @Column(name = "description")
     private String description;
+
+    @NotNull(message = "Price is mandatory")
+    @Positive(message = "Price should be a positive value")
     @Column(name = "price")
-    private String price;
+    private Double price;
+
+    @NotBlank(message = "Location is mandatory")
     @Column(name = "location")
     private String location;
-
     public Listing(){
 
     }
 
-    public Listing(String host_first_name, String host_last_name, String host_email, String title, String description, String price, String location) {
+    public Listing(String host_first_name, String host_last_name, String host_email, String title, String description, Double price, String location) {
         this.host_first_name = host_first_name;
         this.host_last_name = host_last_name;
         this.host_email = host_email;
@@ -86,11 +104,11 @@ public class Listing {
         this.description = description;
     }
 
-    public String getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
